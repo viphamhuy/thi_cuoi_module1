@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<body>
+<script>
+    function tryRemoveArray(arr,index) {
+        if(index>=0) {
+            arr.splice(index, 1);
+            return arr;
+        }
+        else {
+            return arr;
+        }
+    };
+    let arr1 = [12,6,3,7,21,5,7];
+    let arr2 = [12,6,3,7,21,5,7];
+    let arr3 = [12,6,3,7,21,5,7];
+    let arr4 = [12,6,3,7,21,5,7];
+    document.write(tryRemoveArray(arr1,2)+'<br>')
+    document.write(tryRemoveArray(arr2,0)+'<br>');
+    document.write(tryRemoveArray(arr3,7)+'<br>');
+    document.write(tryRemoveArray(arr4,-2)+'<br>');
+</script>
+</body>
+</html>

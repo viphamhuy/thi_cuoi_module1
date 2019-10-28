@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3</title>
+</head>
+<body>
+<script>
+    function isPrime(value) {
+        if(value<2)
+        {
+            return false;
+        }
+        else
+        {
+            if(value==2)
+            {
+                return true;
+            }
+            else
+            {
+                if(value%2==0)
+                {
+                    return false;
+                }
+                else
+                {
+                    for(let i=3;i<Math.sqrt(value);i+=2)
+                    {
+                            if(value%i==0)
+                            {
+                                return false;
+                            }
+                    }
+                }
+                return true;
+            }
+        }
+    };
+
+    document.write(isPrime(2)+'<br>');
+    document.write(isPrime(4));
+</script>
+</body>
+</html>
